@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <link rel="stylesheet" href="./assets/css/playspace.css"/>
+    <title>Driptuch</title>
+  </head>
+  <body>
+    <div class="outer-field">
+      <div id="menu" class="menu">
+	<div id="menu-div-a" class="menu-div"></div>
+	<div id="menu-div-b" class="menu-div"></div>
+	<div id="menu-div-c" class="menu-div"></div>
+      </div>
+      <div id="menu-panel" class="menu-panel">
+	<div class="menu-panel-item">
+	  <h3 class="menu-panel-h2">High Score</h3>
+	  <div id="high-score-display" class="high-score-display">0</div>
+	</div>
+	<div class="menu-panel-item-b">
+	  <h3 class="menu-panel-h2">Theme</h3>
+	  <select id="theme-select">
+	    <option>Light</option>
+	    <option>Dark</option>
+	    <option selected>Peachy</option>
+	    <option>Dune</option>
+	    <option>Cerise</option>
+	    <option>Olive</option>
+	  </select>
+	</div>
+      </div>
+      <div id="display-field" class="display-field">
+	<div id="points-display" class="display-field-item">0</div>
+	<div id="droplets-display" class="display-field-item">0</div>
+      </div>
+      <div id="main-field-wrapper" class="main-field-wrapper">
+	<div id="field-areas" class="field-areas">
+	  <div id="orb-field-area" class="orb-field-area">
+	    <div id="orb-field" class="orb-field">
+	    </div>
+	  </div>
+	  <div id="booster-field-area" class="booster-field-area">
+	    <div id="booster-field" class="booster-field">
+	    </div>
+	  </div>
+	</div>
+	<div id="main-field-border" class="main-field-border">
+	  <div id="main-field" class="main-field">
+	    <div id="main-field-shader" class="main-field-shader"></div>
+	    <div id="surface-shader" class="surface-shader"></div>
+	  </div>
+	</div>
+	<button id="play" class="play" type="button" value="play">
+	  <div id="play-icon" class="play-icon"></div>
+	  <div id="play-shader" class="play-shader"></div>
+	  <div id="fill-shader" class="fill-shader"></div>
+	</button>
+      </div>
+    </div>
+    <script src="./assets/js/playspace.js"></script>
+  </body>
+</html>
